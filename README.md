@@ -1,5 +1,14 @@
-#Simple PHP Grep
+Simple PHP Grep
+===============
 This is simple file finder  / grep like write in PHP. This file has recursive method for finding on deep path.
+
+Setup
+-----
+Just upload to your web server.
+
+Usage
+-----
+http://example.com/simple-php-finder.php?needle=[string keyword]&path_to_check=[path]
 
 ##params
 path_to_check this parameter path to check default is ./yuki/

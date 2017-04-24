@@ -22,7 +22,7 @@ function getDirContents($dir,$needle="",&$results = array()){
 					if(strtolower($file_parts['extension'])=="php"){
 						foreach(file($path) as $fli=>$fl){
 							if(strpos($fl, $needle)!==false){
-								echo '<b>'.$path . ' on line ' . ($fli+1) . ':</b><hr /><pre>' . $fl . '</pre><hr /><br />';
+								echo '<b>'.$path . ' on line ' . ($fli+1) . ':</b><hr /><pre>' . filter_var($fl,FILTER_SANITIZE_FULL_SPECIAL_CHARS) . '</pre><hr /><br />';
 							}
 						}
 					}
